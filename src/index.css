@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Dark mode is driven by a class on <html>, not the OS query alone, so the
+   header toggle can override the system preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+
+  /* Deep-sea navy — the dark theme's neutral ramp. Deliberately blue rather
+     than black: 950 is the page, 900 cards, 800/700 fills and borders,
+     400-50 the text scale (400 clears 4.5:1 on a 900 card). */
+  --color-navy-50: #eff6fd;
+  --color-navy-100: #dbe9f8;
+  --color-navy-200: #b9d5ee;
+  --color-navy-300: #8db8e0;
+  --color-navy-400: #5c94cc;
+  --color-navy-500: #316fb0;
+  --color-navy-600: #24558c;
+  --color-navy-700: #1a4070;
+  --color-navy-800: #123055;
+  --color-navy-900: #0c2444;
+  --color-navy-950: #06182f;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+/* Tells the browser to render native widgets (audio controls, checkboxes,
+   scrollbars) dark too. */
+html.dark {
+  color-scheme: dark;
+}
+
+/* The exam auto-scrolls between questions — honour the OS setting. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-navy-950 dark:text-navy-50;
+  font-family: var(--font-sans);
+}
+
+/* Keep long TOEIC passages readable without a plugin dependency. */
+.prose-toeic {
+  @apply text-[15px] leading-7 text-slate-700 whitespace-pre-line dark:text-navy-200;
+}
+
+/* Focus ring that stays visible on every interactive element. */
+:where(button, a, input, select, textarea):focus-visible {
+  @apply outline-2 outline-offset-2 outline-indigo-500 dark:outline-indigo-400;
+}
