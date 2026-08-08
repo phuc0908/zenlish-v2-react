@@ -17,6 +17,20 @@ function skillOf(termType: string, partNo: number): Skill {
   return partNo <= 4 ? 'listening' : 'reading'
 }
 
+/**
+ * Media mirrored by `scripts/fetch-media.mjs` is stored under `public/` and
+ * referenced as a path relative to it ("media/test3_ets2026/clip.mp3"), so it
+ * needs the same BASE_URL prefix the test JSON itself gets. Absolute URLs —
+ * anything still pointing at the original host — pass through untouched.
+ */
+function resolveMediaUrl(value: string | null): string | null {
+  if (!value) return null
+  if (/^(https?:)?\/\//i.test(value) || value.startsWith('data:') || value.startsWith('/')) {
+    return value
+  }
+  return `${import.meta.env.BASE_URL}${value.replace(/^\.\//, '')}`
+}
+
 function normalizeQuestion(raw: RawQuestion, index: number, fallbackNo: number): Question | null {
   const source = raw.sub_questions[index]
   if (!source) return null
@@ -59,11 +73,11 @@ function normalizeGroup(raw: RawQuestion, partNo: number, nextNo: number): Group
     id: raw.question_id,
     partNo,
     title: raw.title?.trim() ?? '',
-    audioUrl: typeof raw.audio_url === 'string' ? textOrNull(raw.audio_url) : null,
+    audioUrl: resolveMediaUrl(typeof raw.audio_url === 'string' ? textOrNull(raw.audio_url) : null),
     // `content` is the passage slot in the source export; `passage` is accepted
     // too so richer data can be dropped in later without touching this file.
     passage: textOrNull(raw.passage) ?? textOrNull(raw.content),
-    imageUrl: textOrNull(raw.image_url),
+    imageUrl: resolveMediaUrl(textOrNull(raw.image_url)),
     questions,
   }
 }

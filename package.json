@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fetch-media": "node scripts/fetch-media.mjs",
+    "verify-media": "node scripts/fetch-media.mjs --verify"
   },
   "dependencies": {
     "react": "19.1.0",
