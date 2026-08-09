@@ -1,8 +1,17 @@
 import type { Group, Question } from '../types/toeic'
 import type { AnswerMap } from '../lib/scoring'
 import AudioPlayer from './AudioPlayer'
+import GroupImages from './GroupImages'
 import MissingContentNotice from './MissingContentNotice'
 import ReviewQuestion from './ReviewQuestion'
+
+/** "câu 7" for a single question, "câu 62–64" for a group. */
+function questionLabel(group: Group): string {
+  const first = group.questions[0]?.no
+  const last = group.questions.at(-1)?.no
+  if (first == null) return ''
+  return last != null && last !== first ? `câu ${first}–${last}` : `câu ${first}`
+}
 
 interface ReviewGroupViewProps {
   group: Group
@@ -21,6 +30,7 @@ const TWO_COLUMN_PARTS = new Set([6, 7])
  */
 export default function ReviewGroupView({ group, questions, answers }: ReviewGroupViewProps) {
   const twoColumn = TWO_COLUMN_PARTS.has(group.partNo)
+  const label = questionLabel(group)
 
   const questionList = (
     <div className="grid gap-3">
@@ -33,11 +43,13 @@ export default function ReviewGroupView({ group, questions, answers }: ReviewGro
   if (twoColumn) {
     return (
       <section className="grid gap-4 lg:grid-cols-2 lg:items-start">
-        <div className="lg:sticky lg:top-24">
+        <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto">
           {group.passage ? (
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto dark:border-navy-800 dark:bg-navy-900">
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-navy-800 dark:bg-navy-900">
               <p className="prose-toeic">{group.passage}</p>
             </div>
+          ) : group.imageUrls.length > 0 ? (
+            <GroupImages urls={group.imageUrls} label={label} />
           ) : (
             <MissingContentNotice kind="passage" />
           )}
@@ -49,16 +61,11 @@ export default function ReviewGroupView({ group, questions, answers }: ReviewGro
 
   return (
     <section className="grid gap-3">
-      {group.partNo === 1 &&
-        (group.imageUrl ? (
-          <img
-            src={group.imageUrl}
-            alt={`Ảnh câu ${group.questions[0]?.no ?? ''}`}
-            className="w-full rounded-xl border border-slate-200 bg-white object-contain dark:border-navy-800 dark:bg-navy-900"
-          />
-        ) : (
-          <MissingContentNotice kind="image" />
-        ))}
+      {group.imageUrls.length > 0 ? (
+        <GroupImages urls={group.imageUrls} label={label} />
+      ) : (
+        group.partNo === 1 && <MissingContentNotice kind="image" />
+      )}
 
       {group.audioUrl && <AudioPlayer src={group.audioUrl} allowReplay />}
 

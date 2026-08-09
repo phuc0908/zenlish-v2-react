@@ -46,6 +46,22 @@ function resolveMediaUrl(value: string | null): string | null {
   return `${import.meta.env.BASE_URL}${value.replace(/^\.\//, '')}`
 }
 
+/**
+ * Collect a group's pictures from either the array field (`image_urls`) or the
+ * older single-value one (`image_url`), resolving each to a usable URL and
+ * dropping blanks. Order is preserved so multi-document passages read top-down.
+ */
+function resolveImageUrls(raw: RawQuestion): string[] {
+  const candidates = Array.isArray(raw.image_urls)
+    ? raw.image_urls
+    : raw.image_url != null
+      ? [raw.image_url]
+      : []
+  return candidates
+    .map((value) => resolveMediaUrl(textOrNull(value)))
+    .filter((url): url is string => url !== null)
+}
+
 function normalizeQuestion(raw: RawQuestion, index: number, fallbackNo: number): Question | null {
   const source = raw.sub_questions[index]
   if (!source) return null
@@ -92,7 +108,7 @@ function normalizeGroup(raw: RawQuestion, partNo: number, nextNo: number): Group
     // `content` is the passage slot in the source export; `passage` is accepted
     // too so richer data can be dropped in later without touching this file.
     passage: textOrNull(raw.passage) ?? textOrNull(raw.content),
-    imageUrl: resolveMediaUrl(textOrNull(raw.image_url)),
+    imageUrls: resolveImageUrls(raw),
     questions,
   }
 }
@@ -171,8 +187,11 @@ export function questionCount(parts: Part[]): number {
 
 /** Missing picture (Part 1) or passage (Part 6/7) in the source data. */
 export function isContentMissing(group: Group): boolean {
-  if (group.partNo === 1) return group.imageUrl === null
-  if (group.partNo === 6 || group.partNo === 7) return group.passage === null
+  if (group.partNo === 1) return group.imageUrls.length === 0
+  // Part 6/7 passages ship either as text or as scanned images — either counts.
+  if (group.partNo === 6 || group.partNo === 7) {
+    return group.passage === null && group.imageUrls.length === 0
+  }
   return false
 }
 

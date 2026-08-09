@@ -28,8 +28,12 @@ export interface Group {
   audioUrl: string | null
   /** Reading passage for Part 6/7. `null` when the source data has none yet. */
   passage: string | null
-  /** Picture for Part 1. `null` when the source data has none yet. */
-  imageUrl: string | null
+  /**
+   * Pictures for the group: the Part 1 photo, a Part 3/4 chart or map, or the
+   * scanned document(s) that make up a Part 6/7 passage (double/triple passages
+   * carry more than one). Empty when the source data has none.
+   */
+  imageUrls: string[]
   questions: Question[]
 }
 
@@ -73,7 +77,12 @@ export interface RawQuestion {
   audio_url: string | false
   type: string
   sub_questions: RawSubQuestion[]
-  /** Not present today — read anyway so pictures work once they are added. */
+  /**
+   * Group pictures. `image_urls` is the current field (one entry per Part 1/3/4
+   * graphic, several for a Part 6/7 multi-document passage). `image_url` is the
+   * older single-value form, still read as a fallback.
+   */
+  image_urls?: string[]
   image_url?: string
   passage?: string
 }
