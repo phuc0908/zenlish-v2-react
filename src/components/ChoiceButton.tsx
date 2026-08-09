@@ -50,12 +50,8 @@ export default function ChoiceButton({
       >
         {label}
       </span>
-      {text ? (
+      {text && (
         <span className="text-[15px] leading-6 text-slate-800 dark:text-navy-100">{text}</span>
-      ) : (
-        <span className="text-[15px] leading-6 text-slate-400 italic dark:text-navy-400">
-          (đáp án chỉ có trong audio)
-        </span>
       )}
     </button>
   )

@@ -28,12 +28,10 @@ export default function ReviewQuestion({ question, answer }: ReviewQuestionProps
           <span className="inline-flex size-8 shrink-0 items-center justify-center rounded-lg bg-slate-900 text-sm font-bold text-white dark:bg-navy-700 dark:text-navy-50">
             {question.no}
           </span>
-          {question.prompt ? (
+          {question.prompt && (
             <p className="pt-1 text-[15px] leading-6 font-medium text-slate-900 dark:text-navy-50">
               {question.prompt}
             </p>
-          ) : (
-            <p className="pt-1.5 text-sm text-slate-500 italic dark:text-navy-400">Câu hỏi chỉ có trong audio</p>
           )}
         </div>
         <span
