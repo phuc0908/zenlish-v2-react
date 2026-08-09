@@ -50,7 +50,7 @@ export default function ResultPage() {
     .reduce((sum, part) => sum + part.total, 0)
 
   return (
-    <Layout>
+    <Layout wide>
       <nav className="text-sm text-slate-500 dark:text-navy-400">
         <Link to="/" className="hover:text-indigo-700 dark:hover:text-indigo-300">
           Trang chủ

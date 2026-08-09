@@ -23,8 +23,8 @@ interface QuestionGroupViewProps {
   onAudioPlayed: (groupId: number) => void
 }
 
-/** Part 6/7 read better as passage-left, questions-right on a wide screen. */
-const TWO_COLUMN_PARTS = new Set([6, 7])
+/** Parts with a passage or image read better as media-left, questions-right on wide screens. */
+const TWO_COLUMN_PARTS = new Set([1, 3, 4, 6, 7])
 
 export default function QuestionGroupView({
   group,
