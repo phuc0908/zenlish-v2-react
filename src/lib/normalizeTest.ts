@@ -12,6 +12,21 @@ function textOrNull(value: unknown): string | null {
   return trimmed.length > 0 ? trimmed : null
 }
 
+/**
+ * The source explanations join every line with a blank line in between
+ * ("1.\n\n(A) …\n\n(B) …"), which `whitespace-pre-line` renders as big gaps.
+ * Collapse runs of blank lines into a single newline and drop the padding
+ * around each line so the transcript reads as a compact block.
+ */
+function compactLines(value: string): string {
+  return value
+    .replace(/\r\n?/g, '\n')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0)
+    .join('\n')
+}
+
 function skillOf(termType: string, partNo: number): Skill {
   if (termType === 'listening' || termType === 'reading') return termType
   return partNo <= 4 ? 'listening' : 'reading'
@@ -55,7 +70,7 @@ function normalizeQuestion(raw: RawQuestion, index: number, fallbackNo: number):
     prompt,
     choices,
     correctAnswer,
-    explanation: source.explanation_transcript?.trim() ?? '',
+    explanation: compactLines(source.explanation_transcript ?? ''),
   }
 }
 

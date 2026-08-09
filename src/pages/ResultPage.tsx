@@ -1,21 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import AudioPlayer from '../components/AudioPlayer'
 import Layout from '../components/Layout'
-import MissingContentNotice from '../components/MissingContentNotice'
-import ReviewQuestion from '../components/ReviewQuestion'
+import ReviewPager from '../components/ReviewPager'
 import { ETS_2026 } from '../data/registry'
 import { useTest } from '../hooks/useTest'
 import { SECTION_LABEL, partsForSection } from '../lib/scoring'
 import { loadResult } from '../lib/storage'
-
-type Filter = 'all' | 'wrong' | 'blank'
-
-const FILTER_LABEL: Record<Filter, string> = {
-  all: 'Tất cả',
-  wrong: 'Câu sai',
-  blank: 'Bỏ trống',
-}
 
 function formatDuration(ms: number): string {
   const minutes = Math.floor(ms / 60000)
@@ -27,7 +17,6 @@ export default function ResultPage() {
   const { resultId } = useParams<{ resultId: string }>()
   const result = useMemo(() => (resultId ? loadResult(resultId) : null), [resultId])
   const { test, loading } = useTest(result?.testId)
-  const [filter, setFilter] = useState<Filter>('all')
 
   if (!result) {
     return (
@@ -59,15 +48,6 @@ export default function ResultPage() {
   const readingTotal = score.parts
     .filter((part) => part.skill === 'reading')
     .reduce((sum, part) => sum + part.total, 0)
-
-  const keep = (questionNo: number, correctAnswer: string) => {
-    const answer = result.answers[questionNo]
-    const blank = answer === undefined || answer === ''
-    if (filter === 'blank') return blank
-    // "Câu sai" means answered-but-wrong; blanks have their own filter.
-    if (filter === 'wrong') return !blank && answer !== correctAnswer
-    return true
-  }
 
   return (
     <Layout>
@@ -170,26 +150,7 @@ export default function ResultPage() {
       </section>
 
       <section className="mt-8">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <h2 className="text-sm font-bold text-slate-900 dark:text-navy-50">Xem lại bài làm</h2>
-          <div className="flex gap-1.5 rounded-xl bg-slate-100 p-1 dark:bg-navy-800">
-            {(Object.keys(FILTER_LABEL) as Filter[]).map((value) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setFilter(value)}
-                aria-pressed={filter === value}
-                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
-                  filter === value
-                    ? 'bg-white text-slate-900 shadow-sm dark:bg-navy-600 dark:text-navy-50'
-                    : 'text-slate-600 hover:text-slate-900 dark:text-navy-300 dark:hover:text-navy-50'
-                }`}
-              >
-                {FILTER_LABEL[value]}
-              </button>
-            ))}
-          </div>
-        </div>
+        <h2 className="text-sm font-bold text-slate-900 dark:text-navy-50">Xem lại bài làm</h2>
 
         {loading && <p className="mt-6 text-sm text-slate-500 dark:text-navy-400">Đang tải đề để xem lại…</p>}
 
@@ -199,61 +160,7 @@ export default function ResultPage() {
           </p>
         )}
 
-        {test &&
-          parts.map((part) => {
-            const groups = part.groups
-              .map((group) => ({
-                group,
-                questions: group.questions.filter((q) => keep(q.no, q.correctAnswer)),
-              }))
-              .filter((entry) => entry.questions.length > 0)
-
-            if (groups.length === 0) return null
-
-            return (
-              <div key={part.no} className="mt-6">
-                <h3 className="text-xs font-bold tracking-wide text-slate-500 uppercase dark:text-navy-400">
-                  {part.name}
-                </h3>
-
-                <div className="mt-3 grid gap-5">
-                  {groups.map(({ group, questions }) => (
-                    <div key={group.id} className="grid gap-3">
-                      {group.audioUrl && <AudioPlayer src={group.audioUrl} allowReplay />}
-
-                      {(part.no === 6 || part.no === 7) &&
-                        (group.passage ? (
-                          <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-navy-800 dark:bg-navy-900">
-                            <p className="prose-toeic">{group.passage}</p>
-                          </div>
-                        ) : (
-                          <MissingContentNotice kind="passage" />
-                        ))}
-
-                      {part.no === 1 &&
-                        (group.imageUrl ? (
-                          <img
-                            src={group.imageUrl}
-                            alt={`Ảnh câu ${group.questions[0]?.no ?? ''}`}
-                            className="w-full rounded-xl border border-slate-200 bg-white object-contain dark:border-navy-800 dark:bg-navy-900"
-                          />
-                        ) : (
-                          <MissingContentNotice kind="image" />
-                        ))}
-
-                      {questions.map((question) => (
-                        <ReviewQuestion
-                          key={question.no}
-                          question={question}
-                          answer={result.answers[question.no]}
-                        />
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )
-          })}
+        {test && <ReviewPager parts={parts} answers={result.answers} partBreakdown={score.parts} />}
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
