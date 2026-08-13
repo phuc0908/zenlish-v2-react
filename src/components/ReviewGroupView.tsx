@@ -43,7 +43,9 @@ export default function ReviewGroupView({ group, questions, answers }: ReviewGro
   if (twoColumn) {
     return (
       <section className="grid gap-4 lg:grid-cols-2 lg:items-start">
-        <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto">
+        <div className="grid gap-4 lg:sticky lg:top-24 lg:max-h-[calc(100vh-12rem)] lg:overflow-y-auto">
+          {group.audioUrl && <AudioPlayer src={group.audioUrl} allowReplay />}
+
           {group.passage ? (
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-navy-800 dark:bg-navy-900">
               <p className="prose-toeic">{group.passage}</p>
@@ -51,7 +53,11 @@ export default function ReviewGroupView({ group, questions, answers }: ReviewGro
           ) : group.imageUrls.length > 0 ? (
             <GroupImages urls={group.imageUrls} label={label} />
           ) : (
-            <MissingContentNotice kind="passage" />
+            group.partNo === 1 ? (
+              <MissingContentNotice kind="image" />
+            ) : (
+              (group.partNo === 6 || group.partNo === 7) && <MissingContentNotice kind="passage" />
+            )
           )}
         </div>
         {questionList}
