@@ -262,7 +262,7 @@ export default function ExamRunner() {
       <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
         {/* content-start: without it the grid stretches short screens' cards to
             match the answer sheet's height. */}
-        <div className="grid content-start gap-4">
+        <div className="grid content-start gap-4 pb-24">
           {screen.isPartStart && (
             <PartDirections partName={screen.partName} directions={screen.directions} />
           )}
@@ -295,43 +295,42 @@ export default function ExamRunner() {
               }}
             />
           ))}
+        </div>
 
-          {/* Sticky: the way forward stays on screen instead of living at the
-              bottom of a long Part 5 / Part 7 page. */}
-          <nav className="sticky bottom-4 z-20 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-lg backdrop-blur dark:border-navy-700 dark:bg-navy-900/95">
+        {/* Fixed: Vị trí luôn đứng yên 1 chỗ ở đáy màn hình, không bị nhảy lên xuống khi đổi câu */}
+        <nav className="fixed bottom-4 left-1/2 z-30 flex w-[calc(100%-2rem)] max-w-xl -translate-x-1/2 items-center justify-between gap-3 rounded-2xl border border-slate-200/90 bg-white/95 p-3 shadow-xl backdrop-blur-md dark:border-navy-700/90 dark:bg-navy-900/95">
+          <button
+            type="button"
+            onClick={() => goToScreen(screenIndex - 1)}
+            disabled={screenIndex === 0}
+            className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-navy-700 dark:bg-navy-800 dark:text-navy-100"
+          >
+            ← Trước
+          </button>
+          <div className="text-center leading-tight">
+            <div className="text-xs font-semibold text-slate-600 tabular-nums dark:text-navy-300">
+              {screenIndex + 1} / {screens.length}
+            </div>
+            <div className="hidden text-[11px] text-slate-400 sm:block dark:text-navy-400">phím ← →</div>
+          </div>
+          {screenIndex === screens.length - 1 ? (
             <button
               type="button"
-              onClick={() => goToScreen(screenIndex - 1)}
-              disabled={screenIndex === 0}
-              className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-navy-700 dark:bg-navy-800 dark:text-navy-100"
+              onClick={() => setConfirmOpen(true)}
+              className="rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 dark:bg-navy-100 dark:text-navy-950 dark:hover:bg-white"
             >
-              ← Trước
+              Nộp bài
             </button>
-            <div className="text-center leading-tight">
-              <div className="text-xs font-semibold text-slate-600 tabular-nums dark:text-navy-300">
-                {screenIndex + 1} / {screens.length}
-              </div>
-              <div className="hidden text-[11px] text-slate-400 sm:block dark:text-navy-400">phím ← →</div>
-            </div>
-            {screenIndex === screens.length - 1 ? (
-              <button
-                type="button"
-                onClick={() => setConfirmOpen(true)}
-                className="rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 dark:bg-navy-100 dark:text-navy-950 dark:hover:bg-white"
-              >
-                Nộp bài
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={() => goToScreen(screenIndex + 1)}
-                className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-indigo-700"
-              >
-                Tiếp →
-              </button>
-            )}
-          </nav>
-        </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => goToScreen(screenIndex + 1)}
+              className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-indigo-700"
+            >
+              Tiếp →
+            </button>
+          )}
+        </nav>
 
         <aside className="hidden lg:block">
           {/* Scrolls inside itself: a 200-question sheet is taller than the viewport. */}

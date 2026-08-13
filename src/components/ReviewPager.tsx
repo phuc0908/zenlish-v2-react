@@ -169,7 +169,7 @@ export default function ReviewPager({ parts, answers, partBreakdown }: ReviewPag
 
   return (
     <div className="mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-6">
-      <div className="min-w-0">
+      <div className="min-w-0 pb-24">
         <div ref={topRef} className="scroll-mt-24" />
 
         <div className="flex gap-2 overflow-x-auto pb-1">
@@ -245,34 +245,35 @@ export default function ReviewPager({ parts, answers, partBreakdown }: ReviewPag
             Không có câu nào ở mục "{FILTER_LABEL[filter]}".
           </p>
         )}
-
-        <nav className="sticky bottom-4 z-20 mt-5 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-lg backdrop-blur dark:border-navy-700 dark:bg-navy-900/95">
-          <button
-            type="button"
-            onClick={goPrev}
-            disabled={pos <= 0}
-            className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-navy-700 dark:bg-navy-800 dark:text-navy-100"
-          >
-            ← Trước
-          </button>
-          <div className="text-center leading-tight">
-            <div className="text-xs font-semibold text-slate-600 tabular-nums dark:text-navy-300">
-              {nInPart > 0 ? `${kInPart} / ${nInPart}` : '—'}
-            </div>
-            {activePartNo !== undefined && (
-              <div className="text-[11px] text-slate-400 dark:text-navy-400">Part {activePartNo}</div>
-            )}
-          </div>
-          <button
-            type="button"
-            onClick={goNext}
-            disabled={pos < 0 || pos >= visibleIndices.length - 1}
-            className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Tiếp →
-          </button>
-        </nav>
       </div>
+
+      {/* Fixed: Vị trí luôn đứng yên 1 chỗ ở đáy màn hình trong Review mode */}
+      <nav className="fixed bottom-4 left-1/2 z-30 flex w-[calc(100%-2rem)] max-w-xl -translate-x-1/2 items-center justify-between gap-3 rounded-2xl border border-slate-200/90 bg-white/95 p-3 shadow-xl backdrop-blur-md dark:border-navy-700/90 dark:bg-navy-900/95">
+        <button
+          type="button"
+          onClick={goPrev}
+          disabled={pos <= 0}
+          className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-navy-700 dark:bg-navy-800 dark:text-navy-100"
+        >
+          ← Trước
+        </button>
+        <div className="text-center leading-tight">
+          <div className="text-xs font-semibold text-slate-600 tabular-nums dark:text-navy-300">
+            {nInPart > 0 ? `${kInPart} / ${nInPart}` : '—'}
+          </div>
+          {activePartNo !== undefined && (
+            <div className="text-[11px] text-slate-400 dark:text-navy-400">Part {activePartNo}</div>
+          )}
+        </div>
+        <button
+          type="button"
+          onClick={goNext}
+          disabled={pos < 0 || pos >= visibleIndices.length - 1}
+          className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          Tiếp →
+        </button>
+      </nav>
 
       <aside className="mt-6 hidden lg:mt-0 lg:block">
         <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
