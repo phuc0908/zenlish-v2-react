@@ -5,3 +5,5 @@ dist
 .vite
 *.local
 .DS_Store
+GUIDE.md
+SPECIFICATION.md
