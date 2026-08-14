@@ -63,31 +63,47 @@ function resolveImageUrls(raw: RawQuestion): string[] {
 }
 
 function normalizeQuestion(raw: RawQuestion, index: number, fallbackNo: number): Question | null {
-  const source = raw.sub_questions[index]
+  const source = raw.sub_questions?.[index]
   if (!source) return null
 
-  const rawText = source.question ?? ''
+  const srcObj = source as any
+  const rawText = srcObj.question ?? srcObj.title ?? ''
   const match = LEADING_NUMBER.exec(rawText)
   const no = match?.[1] ? Number.parseInt(match[1], 10) : fallbackNo
   const prompt = match ? rawText.slice(match[0].length).trim() : rawText.trim()
 
-  const choices = source.choices.map((choice) => ({
-    label: choice.choice.trim().toUpperCase(),
-    text: choice.answer.trim(),
-    correct: choice.correct === true,
+  const rawChoices = Array.isArray(srcObj.choices) ? srcObj.choices : Array.isArray(srcObj.answer) ? srcObj.answer : []
+  const choices = rawChoices.map((choice: any) => ({
+    label: (choice.choice ?? '').trim().toUpperCase(),
+    text: (choice.answer ?? choice.choice_answer ?? '').trim(),
+    correct: choice.correct === true || choice.choice_right_answer === true,
   }))
 
   // Prefer the explicit field; fall back to whichever choice is flagged correct.
   const correctAnswer =
-    source.correct_answer?.trim().toUpperCase() || (choices.find((c) => c.correct)?.label ?? '')
+    srcObj.correct_answer?.trim().toUpperCase() || (choices.find((c: { correct: boolean }) => c.correct)?.label ?? '')
 
   return {
     no,
     prompt,
     choices,
     correctAnswer,
-    explanation: compactLines(source.explanation_transcript ?? ''),
+    explanation: compactLines(srcObj.explanation_transcript ?? srcObj.explanation ?? ''),
   }
+}
+
+function cleanPassage(val: string | null): string | null {
+  if (!val) return null
+  const unescaped = val
+    .replaceAll('&lt;', '<')
+    .replaceAll('&gt;', '>')
+    .replaceAll('&quot;', '"')
+    .replaceAll('&#039;', "'")
+    .replaceAll('&amp;', '&')
+
+  // Strip out HTML <img> tags
+  const stripped = unescaped.replace(/<img[^>]*>/gi, '').trim()
+  return stripped.length > 0 ? stripped : null
 }
 
 function normalizeGroup(raw: RawQuestion, partNo: number, nextNo: number): Group {
@@ -107,7 +123,7 @@ function normalizeGroup(raw: RawQuestion, partNo: number, nextNo: number): Group
     audioUrl: resolveMediaUrl(typeof raw.audio_url === 'string' ? textOrNull(raw.audio_url) : null),
     // `content` is the passage slot in the source export; `passage` is accepted
     // too so richer data can be dropped in later without touching this file.
-    passage: textOrNull(raw.passage) ?? textOrNull(raw.content),
+    passage: cleanPassage(textOrNull(raw.passage) ?? textOrNull(raw.content)),
     imageUrls: resolveImageUrls(raw),
     questions,
   }
