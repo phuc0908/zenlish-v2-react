@@ -1,8 +1,8 @@
-[
+﻿[
   {
     "term_id": 121,
     "term_name": "Part 1",
-    "term_desc": "&lt;p style=&quot;text-align: center;&quot;&gt;LISTENING TEST&lt;/p&gt;&lt;br /&gt;In the Listening test, you will be asked to demonstrate how well you understand spoken English. The entire Listening test will last approximately 45 minutes. There are four parts, and directions are given for each part. You must mark your answers on the separate answer sheet. Do not write your answers in your test book.&lt;br /&gt;&lt;br /&gt;PART 1:&lt;br /&gt;Directions: For each question in this part, you will hear four statements about a picture in your test book. When you hear the statements, you must select the one statement that best describes what you see in the picture. Then find the number of the question on your answer sheet and mark your answer. The statements will not be printed in your test book and will be spoken only one time.&lt;br /&gt;&lt;br /&gt;&lt;img class=&quot;aligncenter wp-image-15871 size-full&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2022/08/4.jpg&quot; alt=&quot;&quot; width=&quot;1728&quot; height=&quot;1188&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Statement (C), &ldquo;They&rsquo;re sitting at a table,&rdquo; is the bust description of the picture, so you should select answer (C) and mark it on your answer sheet.",
+    "term_desc": "&lt;p style=&quot;text-align: center;&quot;&gt;LISTENING TEST&lt;/p&gt;&lt;br /&gt;In the Listening test, you will be asked to demonstrate how well you understand spoken English. The entire Listening test will last approximately 45 minutes. There are four parts, and directions are given for each part. You must mark your answers on the separate answer sheet. Do not write your answers in your test book.&lt;br /&gt;&lt;br /&gt;PART 1:&lt;br /&gt;Directions: For each question in this part, you will hear four statements about a picture in your test book. When you hear the statements, you must select the one statement that best describes what you see in the picture. Then find the number of the question on your answer sheet and mark your answer. The statements will not be printed in your test book and will be spoken only one time.&lt;br /&gt;&lt;br /&gt;&lt;img class=&quot;aligncenter wp-image-15871 size-full&quot; src=&quot;data/image/test4/4.jpg&quot; alt=&quot;&quot; width=&quot;1728&quot; height=&quot;1188&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Statement (C), &ldquo;They&rsquo;re sitting at a table,&rdquo; is the bust description of the picture, so you should select answer (C) and mark it on your answer sheet.",
     "term_type": "listening",
     "term_quantity": -1,
     "term_questions": [
@@ -46,11 +46,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.1",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86329&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-1-1.jpg&quot; alt=&quot;&quot; width=&quot;874&quot; height=&quot;1252&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86329&quot; src=&quot;data/image/test4/zenlish-1-1.jpg&quot; alt=&quot;&quot; width=&quot;874&quot; height=&quot;1252&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-01.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-01.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-01.mp3"
       },
       {
         "question_id": 86385,
@@ -84,11 +84,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.2",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86433&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-2-1.jpg&quot; alt=&quot;&quot; width=&quot;1344&quot; height=&quot;966&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86433&quot; src=&quot;data/image/test4/zenlish-2-1.jpg&quot; alt=&quot;&quot; width=&quot;1344&quot; height=&quot;966&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-02.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-02.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-02.mp3"
       },
       {
         "question_id": 86485,
@@ -122,11 +122,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.3",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86488&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-3-2.jpg&quot; alt=&quot;&quot; width=&quot;1012&quot; height=&quot;1234&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86488&quot; src=&quot;data/image/test4/zenlish-3-2.jpg&quot; alt=&quot;&quot; width=&quot;1012&quot; height=&quot;1234&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-03-1.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-03-1.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-03-1.mp3"
       },
       {
         "question_id": 86451,
@@ -160,11 +160,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.4",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86463&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-4-1.jpg&quot; alt=&quot;&quot; width=&quot;1352&quot; height=&quot;976&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86463&quot; src=&quot;data/image/test4/zenlish-4-1.jpg&quot; alt=&quot;&quot; width=&quot;1352&quot; height=&quot;976&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-04.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-04.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-04.mp3"
       },
       {
         "question_id": 86501,
@@ -198,11 +198,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.5",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86510&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-5-2.jpg&quot; alt=&quot;&quot; width=&quot;882&quot; height=&quot;1252&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86510&quot; src=&quot;data/image/test4/zenlish-5-2.jpg&quot; alt=&quot;&quot; width=&quot;882&quot; height=&quot;1252&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-05.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-05.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-05.mp3"
       },
       {
         "question_id": 86516,
@@ -236,14 +236,14 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 1.6",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86519&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-6-2.jpg&quot; alt=&quot;&quot; width=&quot;1346&quot; height=&quot;972&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-86519&quot; src=&quot;data/image/test4/zenlish-6-2.jpg&quot; alt=&quot;&quot; width=&quot;1346&quot; height=&quot;972&quot; /&gt;",
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-06-1.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-06-1.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-06-1.mp3"
       }
     ],
-    "term_audio": "https://zenlishtoeic.vn/wp-content/uploads/2022/08/DIRECTION-PART-1.mp3"
+    "term_audio": "media/direction/DIRECTION-PART-1.mp3"
   },
   {
     "term_id": 120,
@@ -310,7 +310,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-07.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-07.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-07.mp3"
       },
       {
         "question_id": 86547,
@@ -343,7 +343,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-08.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-08.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-08.mp3"
       },
       {
         "question_id": 86555,
@@ -376,7 +376,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-09.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-09.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-09.mp3"
       },
       {
         "question_id": 86803,
@@ -409,7 +409,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-10.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-10.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-10.mp3"
       },
       {
         "question_id": 86810,
@@ -442,7 +442,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-11.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-11.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-11.mp3"
       },
       {
         "question_id": 86818,
@@ -475,7 +475,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-12.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-12.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-12.mp3"
       },
       {
         "question_id": 86821,
@@ -508,7 +508,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-13.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-13.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-13.mp3"
       },
       {
         "question_id": 86851,
@@ -541,7 +541,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-14.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-14.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-14.mp3"
       },
       {
         "question_id": 86854,
@@ -574,7 +574,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-15.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-15.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-15.mp3"
       },
       {
         "question_id": 86857,
@@ -607,7 +607,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-16.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-16.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-16.mp3"
       },
       {
         "question_id": 86860,
@@ -640,7 +640,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-17.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-17.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-17.mp3"
       },
       {
         "question_id": 86863,
@@ -673,7 +673,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-18.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-18.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-18.mp3"
       },
       {
         "question_id": 86866,
@@ -706,7 +706,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-19.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-19.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-19.mp3"
       },
       {
         "question_id": 86869,
@@ -739,7 +739,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-20.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-20.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-20.mp3"
       },
       {
         "question_id": 86872,
@@ -772,7 +772,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-21.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-21.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-21.mp3"
       },
       {
         "question_id": 86875,
@@ -805,7 +805,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-22.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-22.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-22.mp3"
       },
       {
         "question_id": 86880,
@@ -838,7 +838,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-23.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-23.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-23.mp3"
       },
       {
         "question_id": 86885,
@@ -871,7 +871,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-24.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-24.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-24.mp3"
       },
       {
         "question_id": 86890,
@@ -904,7 +904,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-25.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-25.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-25.mp3"
       },
       {
         "question_id": 86894,
@@ -937,7 +937,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-26.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-26.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-26.mp3"
       },
       {
         "question_id": 86899,
@@ -970,7 +970,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-27.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-27.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-27.mp3"
       },
       {
         "question_id": 86905,
@@ -1003,7 +1003,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-28.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-28.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-28.mp3"
       },
       {
         "question_id": 86925,
@@ -1036,7 +1036,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-29.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-29.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-29.mp3"
       },
       {
         "question_id": 86942,
@@ -1069,7 +1069,7 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-30.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-30.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-30.mp3"
       },
       {
         "question_id": 86932,
@@ -1102,10 +1102,10 @@
         "is_grouped": false,
         "audio_url": "media/test4_ets2026/zenlish-test-03-31.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-31.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-31.mp3"
       }
     ],
-    "term_audio": "https://zenlishtoeic.vn/wp-content/uploads/2022/08/DIRECTION-PART-2.mp3"
+    "term_audio": "media/direction/DIRECTION-PART-2.mp3"
   },
   {
     "term_id": 122,
@@ -1219,7 +1219,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-32-34.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-32-34.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-32-34.mp3"
       },
       {
         "question_id": 86956,
@@ -1311,7 +1311,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-35-37.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-35-37.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-35-37.mp3"
       },
       {
         "question_id": 86964,
@@ -1403,7 +1403,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-38-40.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-38-40.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-38-40.mp3"
       },
       {
         "question_id": 86969,
@@ -1495,7 +1495,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-41-43.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-41-43.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-41-43.mp3"
       },
       {
         "question_id": 86983,
@@ -1587,7 +1587,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-44-46.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-44-46.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-44-46.mp3"
       },
       {
         "question_id": 86988,
@@ -1679,7 +1679,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-47-49.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-47-49.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-47-49.mp3"
       },
       {
         "question_id": 87112,
@@ -1771,7 +1771,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-50-52.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-50-52.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-50-52.mp3"
       },
       {
         "question_id": 87122,
@@ -1863,7 +1863,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-53-55.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-53-55.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-53-55.mp3"
       },
       {
         "question_id": 87129,
@@ -1955,7 +1955,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-56-58.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-56-58.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-56-58.mp3"
       },
       {
         "question_id": 87137,
@@ -2047,7 +2047,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-59-61.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-59-61.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-59-61.mp3"
       },
       {
         "question_id": 87152,
@@ -2135,11 +2135,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 3.62-64",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87161&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-62-64-3.jpg&quot; alt=&quot;&quot; width=&quot;822&quot; height=&quot;690&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87161&quot; src=&quot;data/image/test4/zenlish-62-64-3.jpg&quot; alt=&quot;&quot; width=&quot;822&quot; height=&quot;690&quot; /&gt;",
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-62-64.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-62-64.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-62-64.mp3"
       },
       {
         "question_id": 87142,
@@ -2227,11 +2227,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 3.65-67",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87164&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-65-67-4.jpg&quot; alt=&quot;&quot; width=&quot;924&quot; height=&quot;416&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87164&quot; src=&quot;data/image/test4/zenlish-65-67-4.jpg&quot; alt=&quot;&quot; width=&quot;924&quot; height=&quot;416&quot; /&gt;",
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-65-67.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-65-67.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-65-67.mp3"
       },
       {
         "question_id": 87166,
@@ -2319,14 +2319,14 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 3.68-70",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87175&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-68-70-3.jpg&quot; alt=&quot;&quot; width=&quot;1004&quot; height=&quot;738&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87175&quot; src=&quot;data/image/test4/zenlish-68-70-3.jpg&quot; alt=&quot;&quot; width=&quot;1004&quot; height=&quot;738&quot; /&gt;",
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-68-70.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-68-70.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-68-70.mp3"
       }
     ],
-    "term_audio": "https://zenlishtoeic.vn/wp-content/uploads/2022/08/DIRECTION-PART-3.mp3"
+    "term_audio": "media/direction/DIRECTION-PART-3.mp3"
   },
   {
     "term_id": 146,
@@ -2437,7 +2437,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-71-73.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-71-73.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-71-73.mp3"
       },
       {
         "question_id": 87235,
@@ -2529,7 +2529,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-74-76.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-74-76.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-74-76.mp3"
       },
       {
         "question_id": 87270,
@@ -2621,7 +2621,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-77-79-1.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-77-79-1.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-77-79-1.mp3"
       },
       {
         "question_id": 87289,
@@ -2713,7 +2713,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-80-82.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-80-82.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-80-82.mp3"
       },
       {
         "question_id": 87310,
@@ -2805,7 +2805,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-83-85-1.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-83-85-1.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-83-85-1.mp3"
       },
       {
         "question_id": 87316,
@@ -2897,7 +2897,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-86-88.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-86-88.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-86-88.mp3"
       },
       {
         "question_id": 87321,
@@ -2989,7 +2989,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-89-91.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-89-91.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-89-91.mp3"
       },
       {
         "question_id": 87332,
@@ -3081,7 +3081,7 @@
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-92-94.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-92-94.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-92-94.mp3"
       },
       {
         "question_id": 87344,
@@ -3169,11 +3169,11 @@
           }
         ],
         "title": "ETS 2026 TEST 3 PART 4.95-97",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87345&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-95-97-4.jpg&quot; alt=&quot;&quot; width=&quot;1390&quot; height=&quot;738&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-87345&quot; src=&quot;data/image/test4/zenlish-95-97-4.jpg&quot; alt=&quot;&quot; width=&quot;1390&quot; height=&quot;738&quot; /&gt;",
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-95-97.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-95-97.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-95-97.mp3"
       },
       {
         "question_id": 87357,
@@ -3261,14 +3261,14 @@
           }
         ],
         "title": "ETS 2026 TEST 3 PART 4.98-100",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-90601&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-3-p4-98-100.jpg&quot; alt=&quot;&quot; width=&quot;485&quot; height=&quot;379&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-90601&quot; src=&quot;data/image/test4/zenlish-test-3-p4-98-100.jpg&quot; alt=&quot;&quot; width=&quot;485&quot; height=&quot;379&quot; /&gt;",
         "is_grouped": true,
         "audio_url": "media/test4_ets2026/zenlish-test-03-98-100.mp3",
         "type": "listening",
-        "audio_url_source": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-test-03-98-100.mp3"
+        "audio_url_source": "media/test4_ets2026/zenlish-test-03-98-100.mp3"
       }
     ],
-    "term_audio": "https://zenlishtoeic.vn/wp-content/uploads/2022/08/DIRECTION-PART-4.mp3"
+    "term_audio": "media/direction/DIRECTION-PART-4.mp3"
   },
   {
     "term_id": 183,
@@ -4548,7 +4548,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 6. 131-134",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88283&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-131.jpg&quot; alt=&quot;&quot; width=&quot;771&quot; height=&quot;325&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88283&quot; src=&quot;data/image/test4/zenlish-screenshot-131.jpg&quot; alt=&quot;&quot; width=&quot;771&quot; height=&quot;325&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -4666,7 +4666,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 6. 135-138",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88286&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-135.jpg&quot; alt=&quot;&quot; width=&quot;772&quot; height=&quot;630&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88286&quot; src=&quot;data/image/test4/zenlish-screenshot-135.jpg&quot; alt=&quot;&quot; width=&quot;772&quot; height=&quot;630&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -4784,7 +4784,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 6. 139-142",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88299&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-139.jpg&quot; alt=&quot;&quot; width=&quot;764&quot; height=&quot;396&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88299&quot; src=&quot;data/image/test4/zenlish-screenshot-139.jpg&quot; alt=&quot;&quot; width=&quot;764&quot; height=&quot;396&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -4902,7 +4902,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 6. 143-146",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88319&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-2025-146.jpg&quot; alt=&quot;&quot; width=&quot;765&quot; height=&quot;653&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88319&quot; src=&quot;data/image/test4/zenlish-screenshot-2025-146.jpg&quot; alt=&quot;&quot; width=&quot;765&quot; height=&quot;653&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -4993,7 +4993,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 147-148",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88336&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-147.jpg&quot; alt=&quot;&quot; width=&quot;726&quot; height=&quot;329&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88336&quot; src=&quot;data/image/test4/zenlish-screenshot-147.jpg&quot; alt=&quot;&quot; width=&quot;726&quot; height=&quot;329&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5057,7 +5057,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 149-150",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88343&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-149.jpg&quot; alt=&quot;&quot; width=&quot;595&quot; height=&quot;390&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88343&quot; src=&quot;data/image/test4/zenlish-screenshot-149.jpg&quot; alt=&quot;&quot; width=&quot;595&quot; height=&quot;390&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5121,7 +5121,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 151-152",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88350&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-151.jpg&quot; alt=&quot;&quot; width=&quot;734&quot; height=&quot;509&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88350&quot; src=&quot;data/image/test4/zenlish-screenshot-151.jpg&quot; alt=&quot;&quot; width=&quot;734&quot; height=&quot;509&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5185,7 +5185,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 153-154",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88357&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot153.jpg&quot; alt=&quot;&quot; width=&quot;689&quot; height=&quot;687&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88357&quot; src=&quot;data/image/test4/zenlish-screenshot153.jpg&quot; alt=&quot;&quot; width=&quot;689&quot; height=&quot;687&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5276,7 +5276,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 155-157",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88365&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-155.jpg&quot; alt=&quot;&quot; width=&quot;716&quot; height=&quot;609&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88365&quot; src=&quot;data/image/test4/zenlish-screenshot-155.jpg&quot; alt=&quot;&quot; width=&quot;716&quot; height=&quot;609&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5367,7 +5367,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 158-160",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88369&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-158.jpg&quot; alt=&quot;&quot; width=&quot;688&quot; height=&quot;538&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88369&quot; src=&quot;data/image/test4/zenlish-screenshot-158.jpg&quot; alt=&quot;&quot; width=&quot;688&quot; height=&quot;538&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5458,7 +5458,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 161-163",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88374&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-161.jpg&quot; alt=&quot;&quot; width=&quot;709&quot; height=&quot;468&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88374&quot; src=&quot;data/image/test4/zenlish-screenshot-161.jpg&quot; alt=&quot;&quot; width=&quot;709&quot; height=&quot;468&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5576,7 +5576,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 164-167",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88384&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-164.jpg&quot; alt=&quot;&quot; width=&quot;713&quot; height=&quot;431&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88384&quot; src=&quot;data/image/test4/zenlish-screenshot-164.jpg&quot; alt=&quot;&quot; width=&quot;713&quot; height=&quot;431&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5694,7 +5694,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 168-171",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88390&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-168.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;419&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88390&quot; src=&quot;data/image/test4/zenlish-screenshot-168.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;419&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5812,7 +5812,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 172-175",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88400&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-175.jpg&quot; alt=&quot;&quot; width=&quot;689&quot; height=&quot;532&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88400&quot; src=&quot;data/image/test4/zenlish-screenshot-175.jpg&quot; alt=&quot;&quot; width=&quot;689&quot; height=&quot;532&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -5957,7 +5957,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 176-180",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88406&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-176-1.jpg&quot; alt=&quot;&quot; width=&quot;724&quot; height=&quot;527&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88407&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-177-2.jpg&quot; alt=&quot;&quot; width=&quot;693&quot; height=&quot;395&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88406&quot; src=&quot;data/image/test4/zenlish-screenshot-176-1.jpg&quot; alt=&quot;&quot; width=&quot;724&quot; height=&quot;527&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88407&quot; src=&quot;data/image/test4/zenlish-screenshot-177-2.jpg&quot; alt=&quot;&quot; width=&quot;693&quot; height=&quot;395&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -6102,7 +6102,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 181-185",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88415&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-181.jpg&quot; alt=&quot;&quot; width=&quot;577&quot; height=&quot;479&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88417&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screensho185.jpg&quot; alt=&quot;&quot; width=&quot;651&quot; height=&quot;272&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88415&quot; src=&quot;data/image/test4/zenlish-screenshot-181.jpg&quot; alt=&quot;&quot; width=&quot;577&quot; height=&quot;479&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88417&quot; src=&quot;data/image/test4/zenlish-screensho185.jpg&quot; alt=&quot;&quot; width=&quot;651&quot; height=&quot;272&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -6247,7 +6247,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 186-190",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88426&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-186.jpg&quot; alt=&quot;&quot; width=&quot;708&quot; height=&quot;531&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88427&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot190.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;477&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88428&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-187.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;486&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88426&quot; src=&quot;data/image/test4/zenlish-screenshot-186.jpg&quot; alt=&quot;&quot; width=&quot;708&quot; height=&quot;531&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88427&quot; src=&quot;data/image/test4/zenlish-screenshot190.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;477&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88428&quot; src=&quot;data/image/test4/zenlish-screenshot-187.jpg&quot; alt=&quot;&quot; width=&quot;701&quot; height=&quot;486&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -6392,7 +6392,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 191-195",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88445&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-191.jpg&quot; alt=&quot;&quot; width=&quot;706&quot; height=&quot;430&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88446&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-192.jpg&quot; alt=&quot;&quot; width=&quot;678&quot; height=&quot;571&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88447&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-193.jpg&quot; alt=&quot;&quot; width=&quot;699&quot; height=&quot;459&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88445&quot; src=&quot;data/image/test4/zenlish-screenshot-191.jpg&quot; alt=&quot;&quot; width=&quot;706&quot; height=&quot;430&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88446&quot; src=&quot;data/image/test4/zenlish-screenshot-192.jpg&quot; alt=&quot;&quot; width=&quot;678&quot; height=&quot;571&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88447&quot; src=&quot;data/image/test4/zenlish-screenshot-193.jpg&quot; alt=&quot;&quot; width=&quot;699&quot; height=&quot;459&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
@@ -6537,7 +6537,7 @@
           }
         ],
         "title": "ETS 2026 TEST 3. Part 7. 196-200",
-        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88455&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-196.jpg&quot; alt=&quot;&quot; width=&quot;714&quot; height=&quot;465&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88456&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-197.jpg&quot; alt=&quot;&quot; width=&quot;698&quot; height=&quot;494&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88457&quot; src=&quot;https://zenlishtoeic.vn/wp-content/uploads/2025/12/zenlish-screenshot-200.jpg&quot; alt=&quot;&quot; width=&quot;702&quot; height=&quot;484&quot; /&gt;",
+        "content": "&lt;img class=&quot;aligncenter size-full wp-image-88455&quot; src=&quot;data/image/test4/zenlish-screenshot-196.jpg&quot; alt=&quot;&quot; width=&quot;714&quot; height=&quot;465&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88456&quot; src=&quot;data/image/test4/zenlish-screenshot-197.jpg&quot; alt=&quot;&quot; width=&quot;698&quot; height=&quot;494&quot; /&gt;&lt;img class=&quot;aligncenter size-full wp-image-88457&quot; src=&quot;data/image/test4/zenlish-screenshot-200.jpg&quot; alt=&quot;&quot; width=&quot;702&quot; height=&quot;484&quot; /&gt;",
         "is_grouped": true,
         "audio_url": false,
         "type": "reading"
