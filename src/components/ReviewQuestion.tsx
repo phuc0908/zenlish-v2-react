@@ -77,7 +77,12 @@ export default function ReviewQuestion({ question, answer }: ReviewQuestionProps
           >
             {showExplanation ? 'Ẩn transcript & giải thích' : 'Xem transcript & giải thích'}
           </button>
-          {showExplanation && <p className="prose-toeic mt-2">{question.explanation}</p>}
+          {showExplanation && (
+            <div
+              className="prose-toeic mt-2"
+              dangerouslySetInnerHTML={{ __html: question.explanation }}
+            />
+          )}
         </div>
       )}
     </article>

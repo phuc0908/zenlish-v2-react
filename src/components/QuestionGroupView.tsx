@@ -89,7 +89,7 @@ export default function QuestionGroupView({
 
           {group.passage ? (
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-navy-800 dark:bg-navy-900">
-              <p className="prose-toeic">{group.passage}</p>
+              <div className="prose-toeic" dangerouslySetInnerHTML={{ __html: group.passage }} />
             </div>
           ) : group.imageUrls.length > 0 ? (
             <GroupImages urls={group.imageUrls} label={label} />
