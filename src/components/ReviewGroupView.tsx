@@ -18,6 +18,7 @@ interface ReviewGroupViewProps {
   /** Already filtered by the parent; media always shows even when empty. */
   questions: Question[]
   answers: AnswerMap
+  expandAll?: boolean | undefined
 }
 
 /** Parts with a passage or image read better as media-left, questions-right on wide screens. */
@@ -28,14 +29,19 @@ const TWO_COLUMN_PARTS = new Set([1, 3, 4, 6, 7])
  * Part 6/7 two-column passage, audio), but each question is a ReviewQuestion
  * showing the correct/chosen answers and explanation instead of an input.
  */
-export default function ReviewGroupView({ group, questions, answers }: ReviewGroupViewProps) {
+export default function ReviewGroupView({ group, questions, answers, expandAll }: ReviewGroupViewProps) {
   const twoColumn = TWO_COLUMN_PARTS.has(group.partNo)
   const label = questionLabel(group)
 
   const questionList = (
     <div className="grid gap-3">
       {questions.map((question) => (
-        <ReviewQuestion key={question.no} question={question} answer={answers[question.no]} />
+        <ReviewQuestion
+          key={question.no}
+          question={question}
+          answer={answers[question.no]}
+          expandAll={expandAll}
+        />
       ))}
     </div>
   )

@@ -50,7 +50,20 @@ body {
 
 /* Keep long TOEIC passages readable without a plugin dependency. */
 .prose-toeic {
-  @apply text-[15px] leading-7 text-slate-700 whitespace-pre-line dark:text-navy-200;
+  @apply text-[15px] leading-7 text-slate-700 dark:text-navy-200;
+}
+
+.prose-toeic p {
+  @apply mb-2.5 last:mb-0;
+}
+
+.prose-toeic table {
+  @apply my-3 w-full border-collapse text-sm;
+}
+
+.prose-toeic th,
+.prose-toeic td {
+  @apply border border-slate-200 p-2 dark:border-navy-700;
 }
 
 /* Focus ring that stays visible on every interactive element. */

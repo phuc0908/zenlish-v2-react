@@ -1,14 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { Question } from '../types/toeic'
 import ChoiceButton from './ChoiceButton'
 
 interface ReviewQuestionProps {
   question: Question
   answer: string | undefined
+  expandAll?: boolean | undefined
 }
 
-export default function ReviewQuestion({ question, answer }: ReviewQuestionProps) {
-  const [showExplanation, setShowExplanation] = useState(false)
+export function formatHtmlContent(content: string): string {
+  if (!content) return ''
+  if (!/<[a-z][\s\S]*>/i.test(content)) {
+    return content.replace(/\n/g, '<br />')
+  }
+  return content
+}
+
+export default function ReviewQuestion({ question, answer, expandAll }: ReviewQuestionProps) {
+  const [showExplanation, setShowExplanation] = useState(expandAll ?? false)
+
+  useEffect(() => {
+    if (expandAll !== undefined) {
+      setShowExplanation(expandAll)
+    }
+  }, [expandAll])
+
   const blank = answer === undefined || answer === ''
   const correct = !blank && answer === question.correctAnswer
 
@@ -80,7 +96,7 @@ export default function ReviewQuestion({ question, answer }: ReviewQuestionProps
           {showExplanation && (
             <div
               className="prose-toeic mt-2"
-              dangerouslySetInnerHTML={{ __html: question.explanation }}
+              dangerouslySetInnerHTML={{ __html: formatHtmlContent(question.explanation) }}
             />
           )}
         </div>

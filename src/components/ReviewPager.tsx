@@ -31,6 +31,7 @@ export default function ReviewPager({ parts, answers, partBreakdown }: ReviewPag
   const [filter, setFilter] = useState<Filter>('all')
   const [screenIndex, setScreenIndex] = useState(0)
   const [navOpen, setNavOpen] = useState(false)
+  const [expandAll, setExpandAll] = useState(false)
   const pendingRef = useRef<PendingScroll | null>(null)
   const topRef = useRef<HTMLDivElement>(null)
 
@@ -206,7 +207,18 @@ export default function ReviewPager({ parts, answers, partBreakdown }: ReviewPag
           <p className="text-xs font-semibold text-slate-500 dark:text-navy-400">
             {screen && `${screen.partName} · câu ${screen.firstQuestionNo}–${screen.lastQuestionNo}`}
           </p>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setExpandAll((value) => !value)}
+              className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
+                expandAll
+                  ? 'border-indigo-500 bg-indigo-50 text-indigo-700 dark:border-indigo-400 dark:bg-navy-800 dark:text-indigo-300'
+                  : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-navy-700 dark:bg-navy-800 dark:text-navy-200'
+              }`}
+            >
+              {expandAll ? 'Ẩn tất cả transcript' : 'Mở tất cả transcript'}
+            </button>
             <button
               type="button"
               onClick={() => setNavOpen(true)}
@@ -237,7 +249,13 @@ export default function ReviewPager({ parts, answers, partBreakdown }: ReviewPag
         {groupsToShow.length > 0 ? (
           <div className="mt-4 grid gap-5">
             {groupsToShow.map(({ group, questions }) => (
-              <ReviewGroupView key={group.id} group={group} questions={questions} answers={answers} />
+              <ReviewGroupView
+                key={group.id}
+                group={group}
+                questions={questions}
+                answers={answers}
+                expandAll={expandAll}
+              />
             ))}
           </div>
         ) : (
