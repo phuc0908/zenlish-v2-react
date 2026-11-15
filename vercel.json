@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/media/test(?:10|[1-9])_ets2026/([^/]+\\.mp3)",
+      "methods": ["GET", "HEAD"],
+      "status": 307,
+      "headers": {
+        "Location": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/$1"
+      }
+    },
+    {
+      "src": "/data/image/test(?:10|[1-35-9])/([^/]+\\.(?:jpe?g|png|webp))",
+      "methods": ["GET", "HEAD"],
+      "status": 307,
+      "headers": {
+        "Location": "https://zenlishtoeic.vn/wp-content/uploads/2025/12/$1"
+      }
+    }
+  ]
+}
