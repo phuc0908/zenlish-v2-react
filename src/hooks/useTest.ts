@@ -10,8 +10,37 @@ interface TestState {
 }
 
 const cache = new Map<string, Test>()
+const hostedDataUrl = import.meta.env.VITE_ZENLISH_DATA_URL?.trim()
 
-/** Fetch a test JSON from `public/`, normalise it, and cache it per session. */
+async function fetchTestJson(url: string | URL, signal: AbortSignal): Promise<RawTerm[]> {
+  const response = await fetch(url, { signal })
+  if (!response.ok) throw new Error(`HTTP ${response.status}`)
+  const data: unknown = await response.json()
+  if (!Array.isArray(data)) throw new Error('Dữ liệu đề không hợp lệ.')
+  return data
+}
+
+async function loadTestJson(file: string, signal: AbortSignal): Promise<RawTerm[]> {
+  if (hostedDataUrl) {
+    const hostedRequest = new AbortController()
+    const cancelHostedRequest = () => hostedRequest.abort()
+    const timeout = window.setTimeout(cancelHostedRequest, 6000)
+    signal.addEventListener('abort', cancelHostedRequest, { once: true })
+
+    try {
+      const base = hostedDataUrl.replace(/\/+$/, '') + '/'
+      return await fetchTestJson(new URL(file, base), hostedRequest.signal)
+    } catch (error) {
+      if (signal.aborted) throw error
+    } finally {
+      window.clearTimeout(timeout)
+      signal.removeEventListener('abort', cancelHostedRequest)
+    }
+  }
+  return fetchTestJson(`${import.meta.env.BASE_URL}${file}`, signal)
+}
+
+/** Load hosted test data when configured, with packaged JSON as a fallback. */
 export function useTest(testId: string | undefined): TestState {
   const [state, setState] = useState<TestState>(() => {
     const cached = testId ? cache.get(testId) : undefined
@@ -38,16 +67,12 @@ export function useTest(testId: string | undefined): TestState {
       return
     }
 
-    let cancelled = false
+    const controller = new AbortController()
     setState({ test: null, loading: true, error: null })
 
-    fetch(`${import.meta.env.BASE_URL}${meta.file}`)
-      .then((response) => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`)
-        return response.json() as Promise<RawTerm[]>
-      })
+    loadTestJson(meta.file, controller.signal)
       .then((raw) => {
-        if (cancelled) return
+        if (controller.signal.aborted) return
         const test = normalizeTest(raw, { id: meta.id, label: meta.label })
         cache.set(testId, test)
 
@@ -63,14 +88,12 @@ export function useTest(testId: string | undefined): TestState {
         setState({ test, loading: false, error: null })
       })
       .catch((error: unknown) => {
-        if (cancelled) return
+        if (controller.signal.aborted) return
         const message = error instanceof Error ? error.message : String(error)
         setState({ test: null, loading: false, error: `Không tải được đề: ${message}` })
       })
 
-    return () => {
-      cancelled = true
-    }
+    return () => controller.abort()
   }, [testId])
 
   return state
